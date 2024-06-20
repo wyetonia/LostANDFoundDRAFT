@@ -21,7 +21,7 @@
         <Grid Grid.Row="1" Grid.Column="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
-                <RowDefinition Height="150"/>
+                <RowDefinition Height="130"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -36,13 +36,24 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
-                <Border Margin="25,10,0,10" HorizontalAlignment="Left" Width="150" 
+                <Border Margin="25,10,0,0" HorizontalAlignment="Left" Width="150" 
                         BorderBrush="Black" BorderThickness="5"/>
                 <Button Grid.Column="1" Margin="40,15,60,85" Content="TAKE PHOTO"/>
                 <Button Grid.Column="1" Margin="40,85,60,15" Content="UPLOAD"/>
-
-
             </Grid>
+
+            <TextBox Grid.Row="2" Margin="0,20,0,570"/>
+            <TextBox Grid.Row="2" Margin="0,70,0,520"/>
+            <TextBox Grid.Row="2" Margin="0,120,0,470"/>
+            <Label Grid.Row="2" Margin="0,170,0,420" Content="text"/>
+            <TextBox Grid.Row="2" Margin="0,220,0,320"/>
+            <TextBox Grid.Row="2" Margin="0,320,0,270"/>
+            <TextBox Grid.Row="2" Margin="0,370,0,220"/>
+            
+            <TextBox Grid.Row="2" Margin="0,420,0,170"/>
+            <TextBox Grid.Row="2" Margin="0,470,0,120"/>
+            <TextBox Grid.Row="2" Margin="0,520,0,70"/>
+            <TextBox Grid.Row="2" Margin="0,570,0,20"/>
 
         </Grid>
     </Grid>
