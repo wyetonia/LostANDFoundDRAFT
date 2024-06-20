@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LostANDFoundDRAFT"
         mc:Ignorable="d"
-        Title="Window2" Height="550" Width="1000">
-    <Grid Margin="0,2,0,-2" Background="#FFC6C6FF">
+        Title="Window2" Height="750" Width="1000">
+    <Grid Background="#FFC6C6FF">
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
