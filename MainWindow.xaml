@@ -5,27 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LostANDFoundDRAFT"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="550" Width="1000">
     <Grid>
-        <!--<Grid.Background>
-            <ImageBrush ImageSource="/Assets/FINALS UI.png"/>
-        </Grid.Background>-->
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Log-in.png"/>
+        </Grid.Background>
+
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>-->
+
         <Label Content="Username:" HorizontalAlignment="Left" 
-               Margin="43,152,0,0" VerticalAlignment="Top"
-               FontSize="10" FontFamily="Segoe UI Black"/>
-        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="47,181,0,0" VerticalAlignment="Top" Width="150"/>
-        <Label Content="Password:" HorizontalAlignment="Left" 
-               Margin="43,0,0,0" VerticalAlignment="Center"
-               FontSize="10" FontFamily="Segoe UI Black"/>
-
-        <Label Content="IDK TEXT YET" HorizontalAlignment="Left" 
-               Margin="43,107,0,0" VerticalAlignment="Top"
+               Margin="389,207,0,0" VerticalAlignment="Top"
                FontSize="20" FontFamily="Segoe UI Black"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Center" 
+               VerticalAlignment="Top" Width="222" FontSize="20" Height="32" Margin="0,248,0,0"/>
 
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="47,233,0,0" VerticalAlignment="Top" Width="150"/>
-        <CheckBox x:Name="chkShowPassword" Content="Show Password" HorizontalAlignment="Left" Margin="46,261,0,0" VerticalAlignment="Top" Checked="chkShowPassword_Checked" Unchecked="chkShowPassword_Unchecked" FontSize="10" FontFamily="Segoe UI Black"/>
-        <TextBox x:Name="txtPasswordShow" HorizontalAlignment="Left" Margin="47,233,0,0" VerticalAlignment="Top" Width="150" Visibility="Collapsed"/>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="47,288,0,0" VerticalAlignment="Top" Width="149" Click="btnLogin_Click" FontSize="9"  FontFamily="Segoe UI Black" Height="30"/>
-        <Label x:Name="lblMessage" Content="" HorizontalAlignment="Left" Margin="45,340,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" Foreground="Red"/>
+        <Label Content="Password:" HorizontalAlignment="Left" 
+               Margin="389,288,0,0" VerticalAlignment="Top"
+               FontSize="20" FontFamily="Segoe UI Black"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Center" VerticalAlignment="Top" 
+               Margin="0,326,0,0" Width="222" Height="32" FontSize="20"/>
+
+        <CheckBox x:Name="chkShowPassword" Content="Show Password" HorizontalAlignment="Center" VerticalAlignment="Top" 
+            Margin="0,372,0,0" Checked="chkShowPassword_Checked" Unchecked="chkShowPassword_Unchecked" 
+            FontSize="15" FontFamily="Segoe UI Black" Width="222" Height="32"/>
+        <TextBox x:Name="txtPasswordShow" HorizontalAlignment="Center" Margin="0,326,0,0" 
+                 VerticalAlignment="Top" Width="222" Height="32" Visibility="Collapsed" FontSize="20"/>
+        <Label x:Name="lblMessage" Content="" HorizontalAlignment="Center" Margin="0,409,0,0" VerticalAlignment="Top"
+               FontFamily="Segoe UI Black" Foreground="Red" Width="222"/>
+
+        <Button Content="Login" HorizontalAlignment="Center" Margin="0,465,0,0" VerticalAlignment="Top"
+        Width="222" Height="40" Click="btnLogin_Click" FontSize="15"  FontFamily="Segoe UI Black" Background="#FF9C8FF5">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    CornerRadius="15">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>
